@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTRO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>APPLE WOLF</h1><img src="Imagen6.png" alt="Logo." width="200" height="200" class="imagen">
+      <h2>Complete Su Registro.</h2>
+    </header>
+
+    <p id="numero"></p>
+
+    <script>
+      function generarNumeroAleatorio() {
+        let numero = Math.floor(Math.random() * 9999999) + 5;
+        let numeroString = numero.toString();
+
+        while (numeroString.length < 7) {
+          numeroString = "0" + numeroString;
+        }
+
+        document.getElementById("numero").innerHTML =
+          "USUARIOS REGISTRADO:" + numeroString;
+      }
+
+      generarNumeroAleatorio();
+    </script>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+      }
+      .mensaje {
+        font-size: 2em;
+        margin-top: 20vh;
+      }
+    </style>
+  </body>
+
+  <head>
+    <title>REGISTRO DE COMPRA</title>
+    <link rel="stylesheet" href="Styles.css" />
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="date"] {
+        width: 50%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px 25px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="registroForm">
+      <label for="nombre">Nombres:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="apellido">Apellidos:</label>
+      <input type="text" id="apellido" name="apellido" required />
+
+      <label for="teléfono">Teléfono:</label>
+      <input type="text" id="teléfono" name="teléfono" required />
+
+      <label for="id">I.D / C.I:</label>
+      <input type="text" id="id" name="id" required />
+
+      <label for="correoelectronico">Correo Electronico:</label>
+      <input
+        type="text"
+        id="correoelectronico"
+        name="correoelectronico"
+        required
+      />
+
+      <label for="fechaCompra">Fecha de Compra:</label>
+      <input type="date" id="fechaCompra" name="fechacompra" required />
+
+      <label for="direccion">Direccion De Envio:</label>
+      <input type="text" id="direccion" name="direccion" required />
+
+      <label for="city">Destino:</label>
+      <select id="city" name="user_city">
+        <option>Albania</option>
+        <option>Alemania</option>
+        <option>Angola</option>
+        <option>Antigua y Barbuda</option>
+        <option>Argentina</option>
+        <option>Aruba</option>
+        <option>Australia</option>
+        <option>Bangladesh</option>
+        <option>Barbados</option>
+        <option>Bélgica</option>
+        <option>Belice</option>
+        <option>Bolivia</option>
+        <option>Brasil</option>
+        <option>Canadá</option>
+        <option>Chile</option>
+        <option>China (Continental)</option>
+        <option>China-Taiwán (Formosa)</option>
+        <option>Colombia</option>
+        <option>Corea del Sur</option>
+        <option>Costa Rica</option>
+        <option>Cuba</option>
+        <option>Curazao</option>
+        <option>Dinamarca</option>
+        <option>Dominica</option>
+        <option>Ecuador</option>
+        <option>El Salvador</option>
+        <option>Emiratos Árabes Unidos</option>
+        <option>España</option>
+        <option>Estados Unidos de América</option>
+        <option>Francia</option>
+        <option>Gambia</option>
+        <option>Ghana</option>
+        <option>Granada</option>
+        <option>Grecia</option>
+        <option>Guadalupe y Dependencias</option>
+        <option>Guatemala</option>
+        <option>Guyana</option>
+        <option>Haití</option>
+        <option>Honduras</option>
+        <option>Hong Kong</option>
+        <option>India</option>
+        <option>Indonesia</option>
+        <option>Irak</option>
+        <option>Irlanda (Eire)</option>
+        <option>Islas Feroe</option>
+        <option>Islas Vírgenes (Norteamericanas)</option>
+        <option>Israel</option>
+        <option>Italia</option>
+        <option>Jamaica</option>
+        <option>Japón</option>
+        <option>Líbano</option>
+        <option>Malasia</option>
+        <option>Martinica</option>
+        <option>México</option>
+        <option>Nicaragua</option>
+        <option>Nigeria</option>
+        <option>Noruega</option>
+        <option>Otras de las Indias Occidentales Británicas</option>
+        <option>Países Bajos</option>
+        <option>Pakistán</option>
+        <option>Paraguay</option>
+        <option>Perú</option>
+        <option>Polonia</option>
+        <option>Portugal</option>
+        <option>Puerto Rico</option>
+        <option>Reino Unido</option>
+        <option>República Dominicana</option>
+        <option>Rusia</option>
+        <option>San Martín (Parte Sur)</option>
+        <option>Santa Lucía</option>
+        <option>Sri Lanka</option>
+        <option>Suecia</option>
+        <option>Suiza</option>
+        <option>Suriname</option>
+        <option>Tailandia</option>
+        <option>Trinidad y Tobago</option>
+        <option>Turquía</option>
+        <option>Uruguay</option>
+        <option>Venezuela</option>
+        <option>Vietnam</option>
+        <option>Zona Libre de Colón (Panamá)</option>
+      </select>
+    </form>
+    <a href="C:/Users/Alien/Documents/Paginas%20Web/Proyecto/Producto.html"
+      ><button>SIGUIENTE</button></a
+    >
+</body>
+</html>

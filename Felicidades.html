@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPRA EXITOSA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>APPLE WOLF</h1><img src="Imagen6.png" alt="Logo." width="200" height="200" class="imagen">
+        <h2>"¡Gracias por su compra!"</h2>
+    </header>
+
+<style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+    }
+    .mensaje {
+      font-size: 1.50em;
+      margin-top: 20vh;
+    }
+</style>
+
+  <img src="Envio1.jpg" alt="iPhone 16e." width="150" height="150" class="imagen">
+
+  <p id="numero"></p>
+
+<script>
+  
+function generarNumeroAleatorio() {
+  let numero = Math.floor(Math.random() * 999999999999999999999) + 20;
+  let numeroString = numero.toString();
+
+  while (numeroString.length < 7) {
+    numeroString = "0" + numeroString;
+  }
+
+  document.getElementById("numero").innerHTML = "Su orden de compra fue validada bajo el numero:" + numeroString;
+}
+
+generarNumeroAleatorio();
+</script>
+
+    <h4>Le enviaremos la información de su compra a su correo electrónico a la brevedad posible, y su envío sale de 24 a 72 horas habiles.</h4>
+    <h4>El tiempo promedio de entrega para envíos internacionales puede variar considerablemente dependiendo del destino. En general, los envíos internacionales pueden tardar entre 7 y 14 días hábiles.</h4>
+    <p><h4>Cualquier Información: Apple +1 (408) 996-1011.</h4></p>
+
+    <p><h4><mark> AVISO IMPORTANTE: </mark> Guarde el numero de orden para su posterior seguimiento en su empresa de envios de confianza.</h4></p>
+
+
+</body>
+</html>
